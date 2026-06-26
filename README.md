@@ -1,36 +1,218 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# PlacePrep
 
-First, run the development server:
+### A Modern Placement Tracker for Students
+
+Track applications, manage interviews, stay organized, and prepare smarter throughout your placement journey.
+
+</div>
+
+---
+
+## 📌 Overview
+
+PlacePrep is a full-stack placement management platform built to help students organize every stage of their recruitment process.
+
+Instead of maintaining multiple spreadsheets, notes, and reminders, users can manage everything from a single dashboard.
+
+---
+
+## ✨ Features
+
+### Authentication
+
+- Email & Password Login
+- Google OAuth Login
+- Secure session management using Supabase Auth
+
+### Dashboard
+
+- Placement statistics
+- Application status analytics
+- Interactive charts
+- Quick overview of placement progress
+
+### Application Tracker
+
+- Add applications
+- Edit applications
+- Delete applications
+- Search by company or role
+- Filter by application status
+
+### Calendar
+
+- Track important recruitment dates
+- Interview scheduling
+- OA reminders
+
+### Profile Management
+
+- Update profile information
+- Personalized dashboard greeting
+
+### Responsive Design
+
+- Desktop optimized
+- Mobile sidebar with hamburger menu
+- Responsive layouts
+
+### Better UX
+
+- Toast notifications
+- Confirmation modals
+- Smooth animations
+- Loading states
+
+---
+
+# Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Frontend | Next.js 15 |
+| Language | TypeScript |
+| UI | React |
+| Styling | Tailwind CSS |
+| Backend | Supabase |
+| Database | PostgreSQL |
+| Authentication | Supabase Auth |
+| Charts | Recharts |
+| Icons | Lucide React |
+| Notifications | Sonner |
+
+---
+
+# 📂 Project Structure
+
+```
+PlacePrep
+│
+├── app/
+│   ├── dashboard/
+│   ├── auth/
+│   └── page.tsx
+│
+├── components/
+│   ├── dashboard/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── CTA.tsx
+│   └── DashboardPreview.tsx
+│
+├── lib/
+│   └── supabase.ts
+│
+├── public/
+│
+├── types/
+│
+└── README.md
+```
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/harshali-nikumbh/PlacePrep.git
+```
+
+Go inside the project
+
+```bash
+cd PlacePrep
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env.local`
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```
+
+Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 📸 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<img width="1888" height="782" alt="image" src="https://github.com/user-attachments/assets/ad84f725-3603-4a5a-a6dd-484814bbcac5" />
+- Landing Page
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img width="1917" height="906" alt="image" src="https://github.com/user-attachments/assets/4a98f676-ed85-4835-ab31-069489433b53" />
+- Dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img width="1917" height="891" alt="image" src="https://github.com/user-attachments/assets/94f48b70-c67c-4920-95d9-328c00508dc2" />
+- Applications Page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+<img width="1898" height="897" alt="image" src="https://github.com/user-attachments/assets/670bdc5b-b315-47ac-958f-09ab244cc3db" />
+- Calendar
+
+
+
+<img width="1257" height="895" alt="image" src="https://github.com/user-attachments/assets/dc48e183-d1ef-407d-9702-4b54f2ce311a" />
+- Profile Page
+
+---
+
+# Future Enhancements
+
+- Resume Builder
+- AI Resume Review
+- AI Interview Preparation
+- Company-wise Analytics
+- Email Reminders
+- Dark/Light Theme
+- Export Applications to CSV
+- Placement Progress Timeline
+
+---
+
+# What I Learned
+
+While building PlacePrep, I gained hands-on experience with:
+
+- Full-stack application development
+- Authentication using Supabase
+- CRUD operations
+- PostgreSQL integration
+- Responsive UI design
+- State management using React Hooks
+- Component-based architecture
+- TypeScript
+- API integration
+- Deployment workflow with GitHub
+
+---
+
+# Author
+
+**Harshali Nikumbh**
+
+LinkedIn: https://www.linkedin.com/in/harshali-nikumbh-964465326/
+
+GitHub: https://github.com/harshali-nikumbh
+
+---
+
+## ⭐ If you found this project helpful, consider giving it a star!

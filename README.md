@@ -4,6 +4,15 @@
 
 ### A Modern Placement Tracker for Students
 
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E?logo=supabase&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?logo=postgresql&logoColor=white)
+![GitHub last commit](https://img.shields.io/github/last-commit/harshali-nikumbh/PlacePrep)
+![GitHub repo size](https://img.shields.io/github/repo-size/harshali-nikumbh/PlacePrep)
+
 Track applications, manage interviews, stay organized, and prepare smarter throughout your placement journey.
 
 </div>
@@ -188,6 +197,14 @@ npm run dev
 
 ---
 
+# Security
+
+- Supabase Authentication
+- Protected Dashboard Routes
+- Environment Variables
+- Secure PostgreSQL Database
+
+  
 # What I Learned
 
 While building PlacePrep, I gained hands-on experience with:

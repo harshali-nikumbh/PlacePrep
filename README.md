@@ -20,7 +20,7 @@ Track applications, manage interviews, stay organized, and prepare smarter throu
 
 ## Live Demo
 
-https://placeprep.vercel.app
+https://place-prep-khaki.vercel.app
 
 ---
 

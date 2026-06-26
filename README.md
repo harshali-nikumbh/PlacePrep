@@ -13,9 +13,14 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/harshali-nikumbh/PlacePrep)
 ![GitHub repo size](https://img.shields.io/github/repo-size/harshali-nikumbh/PlacePrep)
 
+
 Track applications, manage interviews, stay organized, and prepare smarter throughout your placement journey.
 
 </div>
+
+## Live Demo
+
+https://placeprep.vercel.app
 
 ---
 

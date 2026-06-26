@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f7fa;
+  --foreground: #28445d;
+
+  --navy: #28445d;
+  --blue: #719dbc;
+  --purple: #d1a0d0;
+  --white: #ffffff;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    #111827 100%
+  );
+
+  color: white;
+  min-height: 100vh;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fc {
+  color: white;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th,
+.fc-theme-standard .fc-scrollgrid {
+  border-color: #334155;
+}
+
+.fc .fc-toolbar-title {
+  color: white;
+}
+
+.fc .fc-button {
+  background: #D1A0D0 !important;
+  border: none !important;
+  color: #28445D !important;
+}
+
+.fc .fc-daygrid-day-number {
+  color: white;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #CBD5E1;
+}
+
+.fc .fc-day-today {
+  background-color: rgba(209,160,208,.15) !important;
+}
+
+/* Hide scrollbar but keep scrolling */
+.modal-scroll {
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE & Edge */
+}
+
+.modal-scroll::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari, Edge */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar but keep scrolling */
+
+.dashboard-scroll {
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE & Edge */
+}
+
+.dashboard-scroll::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari, Edge */
+}

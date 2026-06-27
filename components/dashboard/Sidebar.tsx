@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 import { supabase } from "@/lib/supabase";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 import { createPortal } from "react-dom";
 
@@ -26,13 +26,24 @@ export default function Sidebar({
   onClose,
 }: SidebarProps) {
   const router = useRouter();
+  const pathname = usePathname();
   const [showLogoutModal, setShowLogoutModal] = useState(false);
 
 const handleLogout = async () => {
   await supabase.auth.signOut();
   setShowLogoutModal(false);
   router.replace("/");
+
 };
+
+
+const linkClass = (path: string) =>
+  `relative flex items-center gap-3 rounded-xl px-4 py-3 transition-all duration-200 ${
+    pathname === path
+      ? "bg-[#D1A0D0]/15 text-[#D1A0D0] border-l-4 border-[#D1A0D0] font-medium"
+      : "text-slate-300 hover:bg-white/5 hover:text-white"
+  }`;
+
 
   return (
 <aside
@@ -72,7 +83,7 @@ ${
         <Link
           href="/dashboard"
           onClick={onClose}
-          className="flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 text-white"
+          className={linkClass("/dashboard")}
         >
           <LayoutDashboard size={20} />
           Dashboard
@@ -81,7 +92,7 @@ ${
         <Link
           href="/dashboard/applications"
           onClick={onClose}
-          className="flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 text-white"
+          className={linkClass("/dashboard/applications")}
         >
           <Briefcase size={20} />
           Applications
@@ -90,7 +101,7 @@ ${
         <Link
           href="/dashboard/calendar"
           onClick={onClose}
-          className="flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 text-white"
+          className={linkClass("/dashboard/calendar")}
         >
           <Calendar size={20} />
           Calendar
@@ -99,7 +110,7 @@ ${
         <Link
           href="/dashboard/profile"
           onClick={onClose}
-          className="flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 text-white"
+          className={linkClass("/dashboard/profile")}
         >
           <User size={20} />
           Profile
@@ -108,7 +119,7 @@ ${
         <Link
           href="/dashboard/settings"
           onClick={onClose}
-          className="flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 text-white"
+          className={linkClass("/dashboard/settings")}
         >
           <Settings size={20} />
           Settings
